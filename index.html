@@ -1,7 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+  <meta charset="utf-8">
+  <meta name="author" content="Hanna Larsson">
+  <meta name="description" content="Web development practice page">
+  <meta name="viewport" content="width=device-width">
+  <meta name="robots" content="index, nofollow">
+  <link rel="icon shortcut" href="img/favicon.ico">
+  <link href="style.css" rel="stylesheet">
+  <script src="script.js"></script>
+
   <title>Home</title>
   <style>
     table,
@@ -29,7 +38,33 @@
       </ul>
     </nav>
   </header>
+  
   <section>
+    <a href="about.html" target="myFrame">In Frame</a>
+    <!--<iframe name="myFrame" src="http://www.discoveryvip.com" title="Course Site" style="width:400px; height:200px; border:1px"></iframe>-->
+    <form method="get" enctype="text/plain" target="_blank">
+      <fieldset>
+      <div>
+        <label for="first">First: </label>
+        <input type="text" name="first" id="first" placeholder="First name" required>
+      </div>
+      <div>
+        <label for="last">Last: </label>
+        <input type="text" name="last" id="last" placeholder="Last name">
+      </div></fieldset>
+      <div>
+        <select name="sel">
+          <option value="one">One</option>
+          <option value="two">Two</option>
+        </select>
+
+        <textarea name="message" style=width:100px> Default Content</textarea>
+
+      </div>
+      <input type="checkbox" checked name=check>
+      <button type="reset">Reset</button>
+      <input type="submit">
+    </form>
     <article>
       <h1>Home</h1>
       <hr>
